@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/color_picker"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/colorPink"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0.5dp"
+            app:strokeColor="@color/colorGray"
+            android:clickable="true"
+            android:focusable="true"/>
+
+</LinearLayout>

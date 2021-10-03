@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+<!--        <item name="android:fontFamily">@font/test</item>-->
+    </style>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+        <item name="queryBackground">@null</item>
+        <item name="closeIcon">@drawable/ic_close_gray</item>
+        <item name="android:maxWidth">10000dp</item>
+    </style>
+
+    <style name="ToolBarSearchView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+    </style>
+</resources>

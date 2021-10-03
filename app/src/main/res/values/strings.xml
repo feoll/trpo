@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Заметки</string>
+    <string name="find_menu">Поиск</string>
+    <string name="delete_bar">Удалить</string>
+    <string name="send">Поделиться</string>
+    <string name="new_notes">Новая заметка</string>
+    <string name="edit_notes">Редактировать заметку</string>
+    <string name="edit_name_notes">Заметка</string>
+    <string name="edit_name_subtitle">Подзаголовок</string>
+    <string name="edit_name_title">Заголовок</string>
+    <string name="bottomSheetNameColor">ЦВЕТ</string>
+</resources>
