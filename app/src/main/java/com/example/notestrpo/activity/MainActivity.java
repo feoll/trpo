@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                adapter.updateAdapter(NoteDbHandler.getsInstance(getApplicationContext()).getAll(newText));
                 return false;
             }
         });
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("mylog", "resume");
-        adapter.updateAdapter(NoteDbHandler.getsInstance(this).getAll());
+        adapter.updateAdapter(NoteDbHandler.getsInstance(this).getAll(""));
     }
 
 }

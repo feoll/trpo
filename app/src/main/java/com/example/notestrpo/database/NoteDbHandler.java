@@ -63,12 +63,14 @@ public class NoteDbHandler extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
 
-    public List<NoteModel> getAll() {
+    public List<NoteModel> getAll(String find) {
         List<NoteModel> list = new ArrayList<>();
 
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
 
-        Cursor cursor = sqLiteDatabase.query(NoteContract.TABLE_NAME,null, null, null, null, null, null);
+        Cursor cursor = sqLiteDatabase.query(NoteContract.TABLE_NAME,null,
+                NoteContract._TITLE + " like ? ", new String[] {"%" + find + "%"},
+                null, null, null);
 
         while (cursor.moveToNext()) {
             String title = cursor.getString(cursor.getColumnIndex(NoteContract._TITLE));
